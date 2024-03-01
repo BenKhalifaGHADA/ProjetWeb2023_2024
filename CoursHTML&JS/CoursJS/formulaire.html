@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>formulaire</title>
+    </head>
+    <body>
+        <form id="f" name="formulaire">
+            <label>Login</label>
+            <input type="text" name="" id="login" class="test" value="Test">
+            <label>Password</label>
+            <input type="password" name="" id="" class="test">
+            <input type="submit" value="Valider">
+            <input type="reset"  value="Annuler">
+        </form>
+      {# <h1 name="titre" id="login" class="test">test</h1> #}
+   <script>
+   // var login=window.document.form.text;
+    //var login=window.document.getElementById('f').getElementById('login').value;
+    //var login=document.getElementById('f').getElementById('login').value;
+    var login=document.getElementById('login').value;
+    var resultat=document.getElementsByClassName('test');
+    console.log(resultat);
+    var balise=document.getElementsByTagName('input');
+    console.log(balise);
+
+    var loginTest=document.querySelector('#login');//ID
+    var loginClasse=document.querySelector('.test');//Class
+    alert(login);
+</script>
+    </body>
+</html>
